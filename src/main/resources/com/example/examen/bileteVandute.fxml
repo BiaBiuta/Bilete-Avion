@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen.BileteController">
+   <children>
+      <TableView fx:id="ticketTableView1" layoutX="97.0" layoutY="118.0" prefHeight="200.0" prefWidth="448.0">
+         <columns>
+            <TableColumn fx:id="idFlight1" prefWidth="75.0" text="username" />
+            <TableColumn fx:id="tableColumnDestinatie1" prefWidth="75.0" text="idflight" />
+            <TableColumn fx:id="tableColumnData1" prefWidth="287.20001220703125" text="date" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

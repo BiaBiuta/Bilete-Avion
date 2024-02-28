@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen.ClientController">
+   <children>
+      <TableView fx:id="ticketTableView" layoutX="14.0" layoutY="15.0" prefHeight="200.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="tableColumnDestinatie" prefWidth="118.4000244140625" text="username" />
+          <TableColumn fx:id="idFlight" prefWidth="53.5999755859375" text="idflight" />
+            <TableColumn fx:id="tableColumnData" prefWidth="210.4000244140625" text="date" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonBileteVandute" layoutX="436.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleBileteVandute" text="Biletevandute" />
+      <ComboBox fx:id="from" layoutX="405.0" layoutY="147.0" prefWidth="150.0" />
+      <ComboBox fx:id="to" layoutX="405.0" layoutY="231.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="394.0" layoutY="304.0" />
+      <TableView fx:id="ticketTableView1" layoutX="18.0" layoutY="217.0" prefHeight="200.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="tableColumnDestinatie1" prefWidth="75.0" text="from" />
+          <TableColumn fx:id="idFlight1" prefWidth="75.0" text="to" />
+            <TableColumn fx:id="tableColumnData1" prefWidth="75.0" text="decolare" />
+            <TableColumn fx:id="tableColumnData2" prefWidth="75.0" text="aterizare" />
+            <TableColumn fx:id="tableColumnLocuri" prefWidth="75.0" text="NumarLocuri" />
+        </columns>
+      </TableView>
+      <Button fx:id="cumpara" layoutX="436.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleCumpara" text="Cumpara" />
+   </children>
+</AnchorPane>
